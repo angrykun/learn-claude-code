@@ -145,19 +145,19 @@
   - 运行测试验证
   - 提交修复（清晰的 commit message）
 
-- [ ] **重构策略**
+- [x] **重构策略**
   - 使用 Plan Mode 规划重构步骤
   - 小步迭代：每次只改一个维度
   - 增量式重构：确保每步都可运行
   - 使用 Claude 识别代码坏味道
 
-- [ ] **测试驱动开发**
+- [x] **测试驱动开发**
   - 让 Claude 匹配项目现有测试模式
   - 明确边界条件（不要假设 Claude 能猜对）
   - 生成测试后人工审查覆盖度
   - 使用 Claude 生成 Mock 和 Fixture
 
-- [ ] **Git 工作流集成**
+- [x] **Git 工作流集成**
   - 提交信息规范：约定式提交（Conventional Commits）
   - PR 创建：`gh pr create` 或告诉 Claude "create a PR"
   - 分支策略：feature 分支 + PR 流程
