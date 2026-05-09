@@ -138,7 +138,7 @@
   - 代码审查：`/review` 命令或 `Skill: code-review`
   - 安全审查：`Skill: security-review`
 
-- [ ] **Bug 修复工作流**
+- [x] **Bug 修复工作流**
   - 粘贴完整错误信息（不要总结）
   - 让 Claude 追踪根因
   - 审查 diff：`/diff` 查看变更
