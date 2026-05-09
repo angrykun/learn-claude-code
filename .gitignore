@@ -2,6 +2,9 @@
 # .learning/  # 已在 git 管理中
 *.log
 
+# Claude Code global config (should not be in project)
+.claude/
+
 # System files
 .DS_Store
 Thumbs.db
