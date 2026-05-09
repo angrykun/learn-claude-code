@@ -1,0 +1,17 @@
+{
+  "topic": "Claude Code 工程实战",
+  "topic_slug": "claude-code-engineering",
+  "created_at": "2026-05-08",
+  "level": "intermediate",
+  "focus": ["real-world", "practice", "theory"],
+  "syllabus_generated": true,
+  "progress": {
+    "current_phase": 1,
+    "completed_concepts": [],
+    "review_due": []
+  },
+  "preferences": {
+    "level": "有使用经验",
+    "focus_areas": ["需求分析与规划", "开发最佳实践", "高级特性实战", "工程化与团队落地"]
+  }
+}

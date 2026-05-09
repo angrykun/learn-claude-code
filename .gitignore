@@ -1,5 +1,5 @@
 # Learning files
-.learning/
+# .learning/  # 已在 git 管理中
 *.log
 
 # System files
