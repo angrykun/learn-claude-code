@@ -1,0 +1,11 @@
+# Learning files
+.learning/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
