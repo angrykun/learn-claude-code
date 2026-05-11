@@ -254,49 +254,49 @@
 
 ### 核心概念
 
-- [ ] **团队 CLAUDE.md 规范**
+- [x] **团队 CLAUDE.md 规范**
   - 项目级 CLAUDE.md 提交到 git，团队共享
   - 统一构建/测试/lint 命令
   - 统一代码风格规则（与 ESLint/Prettier 等对齐）
   - 已知陷阱和非显而易见的行为记录
   - 环境变量的模板（.env.example）
 
-- [ ] **CI/CD 集成**
+- [x] **CI/CD 集成**
   - 在 CI 中运行 Claude Code（非交互模式）
   - `claude -p "query"` 模式用于自动化检查
   - 结合 GitHub Actions / GitLab CI
   - 自动化代码审查（PR 时触发 Claude 审查）
   - 自动化文档更新
 
-- [ ] **权限与安全模型**
+- [x] **权限与安全模型**
   - 权限模式：default（每次确认）/ plan（计划模式）/ minimal（最小权限）/ auto（自动允许）
   - `allowedTools`：允许特定工具无需确认
   - `disallowedTools`：禁止危险操作
   - `.claude/settings.local.json`：个人覆盖（不提交）
   - 敏感信息处理：防止提交 .env、密钥等
 
-- [ ] **成本优化**
+- [x] **成本优化**
   - Prompt Caching：稳定 CLAUDE.md 提升缓存命中率（目标 > 40%）
   - 使用 `/cost` 监控缓存命中率
   - 小模型用于简单任务（Explore subagent 用 Haiku）
   - 批量 API 用于大规模任务（节省高达 95%）
   - 上下文管理：避免无意义的长对话
 
-- [ ] **团队协作模式**
+- [x] **团队协作模式**
   - Managed Settings：组织级统一配置
   - Plugins：打包 Skills/Hooks/Subagents/MCP 供团队复用
   - 共享的 Prompt 模板库
   - 代码审查标准统一（通过 Skill 实现）
   - Onboarding 新成员：用 `/init` + CLAUDE.md
 
-- [ ] **安全合规**
+- [x] **安全合规**
   - OWASP 扫描集成
   - 敏感数据不进入上下文
   - Git hook 防止密钥提交
   - 审计日志：记录 Claude 的操作
   - 合规检查：HIPAA / SOC2 / PCI-DSS 相关控制
 
-- [ ] **迁移与落地策略**
+- [x] **迁移与落地策略**
   - 从个人使用到团队推广的渐进路径
   - 衡量 ROI：开发效率提升指标
   - 常见阻力与应对（"Claude 写的代码不可靠"等）
@@ -304,12 +304,12 @@
 
 ### 🔨 实战练习
 
-- [ ] 为你的团队项目创建一份完整的项目级 CLAUDE.md
-- [ ] 配置 GitHub Actions 工作流：PR 创建时自动用 Claude 做代码审查
-- [ ] 设置权限模型：为敏感仓库配置 minimal 模式 + disallowedTools
-- [ ] 使用 `/cost` 分析一周的实际使用，优化缓存命中率至 40%+
-- [ ] 创建一个 Plugin 打包团队的 Skills 和 Hooks，供其他项目复用
-- [ ] 配置安全 Hook：检测并阻止潜在密钥提交
+- [x] 为你的团队项目创建一份完整的项目级 CLAUDE.md
+- [x] 配置 GitHub Actions 工作流：PR 创建时自动用 Claude 做代码审查
+- [x] 设置权限模型：为敏感仓库配置 minimal 模式 + disallowedTools
+- [x] 使用 `/cost` 分析一周的实际使用，优化缓存命中率至 40%+
+- [x] 创建一个 Plugin 打包团队的 Skills 和 Hooks，供其他项目复用
+- [x] 配置安全 Hook：检测并阻止潜在密钥提交
 
 ### 参考资料
 
