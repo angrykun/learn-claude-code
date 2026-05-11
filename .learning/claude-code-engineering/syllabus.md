@@ -183,41 +183,41 @@
 
 ### 核心概念
 
-- [ ] **Subagents（子智能体）**
+- [x] **Subagents（子智能体）**
   - 内置子智能体：Explore（只读搜索）、Plan（规划）、General-purpose（通用）
   - 自定义子智能体：隔离上下文窗口、自定义系统提示词、限定工具权限
   - 使用场景：并行任务、需要隔离上下文的研究任务
   - 配置层级：Managed > CLI flag > Project > User > Plugin
   - 模型选择：简单任务用 Haiku，复杂任务用 Opus/Sonnet
 
-- [ ] **MCP（Model Context Protocol）**
+- [x] **MCP（Model Context Protocol）**
   - 作用：连接 Claude 到外部服务（数据库、API、Slack 等）
   - 官方 MCP 服务器：文件系统、数据库、Web 搜索等
   - 配置方式：`.claude/settings.json` 中添加 mcpServers
   - 使用场景：查询数据库、发布到 Slack、访问内部 API
   - 安全考虑：MCP 服务器权限控制
 
-- [ ] **Skills（技能）**
+- [x] **Skills（技能）**
   - 定义：可复用的指令、知识和工作流，通过 `/skill-name` 调用
   - 与 Subagents 区别：Skill 是工具扩展，Subagents 是执行隔离
   - 创建方式：`.claude/skills/skill-name.md`
   - 示例：自定义的 `/deploy` 检查清单、代码审查流程
   - 可移植性：Skill 可在 Code/Apps/API 间移植
 
-- [ ] **Hooks（钩子）**
+- [x] **Hooks（钩子）**
   - 作用：在生命周期事件上自动执行脚本、HTTP 请求或提示词
   - 事件类型：SessionStart/SessionEnd、PreToolUse/PostToolUse、UserPromptSubmit、Stop 等
   - Hook 类型：Command hooks（Shell）、HTTP hooks（POST 请求）、MCP tool hooks、Prompt hooks
   - 使用场景：文件变更后自动 lint、提交前运行测试、会话开始时加载上下文
   - 配置位置：`settings.json` 中的 hooks 字段
 
-- [ ] **Agent Teams（多智能体协作，实验性）**
+- [x] **Agent Teams（多智能体协作，实验性）**
   - 作用：协调多个独立的 Claude Code 会话并行工作
   - 工具：TeamCreate、TeamDelete、SendMessage
   - 使用场景：并行代码审查、多模块同时开发
   - 注意事项：实验性功能，API 可能变化
 
-- [ ] **记忆系统进阶**
+- [x] **记忆系统进阶**
   - Memory 类型：user（用户信息）、feedback（反馈规则）、project（项目信息）、reference（外部资源）
   - 何时保存到记忆：用户纠正、确认有效方法、项目决策
   - 何时访问记忆：相关任务、用户明确要求
