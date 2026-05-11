@@ -5,9 +5,17 @@
   "level": "intermediate",
   "focus": ["real-world", "practice", "theory"],
   "syllabus_generated": true,
+  "completed": true,
   "progress": {
-    "current_phase": 1,
-    "completed_concepts": [],
+    "current_phase": 5,
+    "completed_concepts": [
+      "Phase 1: 上下文管理与 CLAUDE.md",
+      "Phase 2: 需求分析与规划实战",
+      "Phase 3: 开发最佳实践",
+      "Phase 4: 高级特性实战",
+      "Phase 5: 工程化与团队落地",
+      "综合实战项目"
+    ],
     "review_due": []
   },
   "preferences": {
