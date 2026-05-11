@@ -224,7 +224,7 @@
   - 记忆文件结构：frontmatter（name/description/type）+ 内容
   - MEMORY.md 索引文件管理（每行 < 150 字符）
 
-- [ ] **Worktree 并行开发**
+- [x] **Worktree 并行开发**
   - 作用：创建隔离的 git worktree 进行并行开发
   - 使用 `EnterWorktree` 工具创建/进入 worktree
   - 使用 `ExitWorktree` 退出（keep/remove 选项）
@@ -232,13 +232,13 @@
 
 ### 🔨 实战练习
 
-- [ ] 创建一个自定义 Subagent：限定只访问 docs/ 目录，用于生成项目文档
-- [ ] 配置一个 MCP 服务器（如 Slack 或数据库），并在开发中使用
-- [ ] 创建两个自定义 Skills：`/code-review-checklist` 和 `/deploy-checklist`
-- [ ] 配置一个 PostToolUse Hook：每次编辑文件后自动运行 lint
-- [ ] 使用 Worktree 创建两个并行工作区，同时开发两个独立功能
-- [ ] 设置 Auto Memory：让 Claude 记住你的编码偏好和项目约束
-- [ ] （进阶）尝试 Agent Teams：创建两个子智能体分别做代码审查和测试生成
+- [x] 创建一个自定义 Subagent：限定只访问 docs/ 目录，用于生成项目文档
+- [x] 配置一个 MCP 服务器（如 Slack 或数据库），并在开发中使用
+- [x] 创建两个自定义 Skills：`/code-review-checklist` 和 `/deploy-checklist`
+- [x] 配置一个 PostToolUse Hook：每次编辑文件后自动运行 lint
+- [x] 使用 Worktree 创建两个并行工作区，同时开发两个独立功能
+- [x] 设置 Auto Memory：让 Claude 记住你的编码偏好和项目约束
+- [x] （进阶）尝试 Agent Teams：创建两个子智能体分别做代码审查和测试生成
 
 ### 参考资料
 
